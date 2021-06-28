@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/04/04 20:25:53.000.577,=D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/04/04 20:43:54.000.248,D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Program Files (x86)\Embarcadero\ProjetosDelphi\JogodaMemoria\untJogoMemória.pas</Transaction>
+    <Transaction>2018/04/04 20:43:54.000.248,D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Program Files (x86)\Embarcadero\ProjetosDelphi\JogodaMemoria\untJogoMemória.dfm</Transaction>
+    <Transaction>2018/04/04 20:44:00.000.963,D:\Meus Documentos\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Program Files (x86)\Embarcadero\ProjetosDelphi\JogodaMemoria\JogoMemoria.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

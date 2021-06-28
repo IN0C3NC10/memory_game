@@ -1,0 +1,14 @@
+program JogoMemoria;
+
+uses
+  Vcl.Forms,
+  untJogoMemória in 'untJogoMemória.pas' {frmJogoMemória};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmJogoMemória, frmJogoMemória);
+  Application.Run;
+end.

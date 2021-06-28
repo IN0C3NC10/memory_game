@@ -1,0 +1,69 @@
+unit untJogoMemória;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.jpeg,
+  Vcl.Imaging.pngimage;
+
+type
+  TfrmJogo = class(TForm)
+    imgMM: TImage;
+    imgACO: TImage;
+    imgACU1: TImage;
+    imgSRTT1: TImage;
+    imgWD: TImage;
+    imgMM1: TImage;
+    imgWar1: TImage;
+    imgWar: TImage;
+    imgTW31: TImage;
+    imgSRTT: TImage;
+    imgACO1: TImage;
+    imgWD1: TImage;
+    imgAPB1: TImage;
+    imgFFXV1: TImage;
+    imgTW3: TImage;
+    imgACU: TImage;
+    imgFFXV: TImage;
+    imgAPB: TImage;
+    Image19: TImage;
+    imgIffxi1: TImage;
+    imgItw31: TImage;
+    imgIacu1: TImage;
+    imgIsrtt: TImage;
+    imgImm: TImage;
+    imgIaco: TImage;
+    imgIapb: TImage;
+    imgImm1: TImage;
+    imgIwar1: TImage;
+    imgIsrtt1: TImage;
+    imgIwd: TImage;
+    imgIaco1: TImage;
+    imgiwar: TImage;
+    imgItw3: TImage;
+    imgIacu: TImage;
+    imgIffxi: TImage;
+    imgIapb1: TImage;
+    imgIwd1: TImage;
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmJogo: TfrmJogo;
+  limite, npares: integer;
+  vnome1, vnome2: string;
+  //se a img esta aberta ou fechada
+  status: boolean;
+
+implementation
+
+{$R *.dfm}
+
+
+
+end.
