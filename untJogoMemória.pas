@@ -1,4 +1,4 @@
-unit untJogoMemória;
+unit untJogoMemÃ³ria;
 
 interface
 
@@ -102,7 +102,7 @@ begin
   limite := 0;
   npares := 9;
   aberta := false;
-  DoubleBuffered := True; // Não piscar a imagens
+  DoubleBuffered := True; // NÃ£o piscar a imagens
 end;
 
 // TIMER
@@ -145,7 +145,7 @@ begin
     imgOutlaw1.Visible := false;
   end;
 
-  if vnome1 = 'Tribo da Matança' then
+  if vnome1 = 'Tribo da MatanÃ§a' then
   begin
     imgSlaughter1I.Visible := True;
     imgSlaughter1.Visible := false;
@@ -162,61 +162,6 @@ begin
     imgWar1I.Visible := True;
     imgWar1.Visible := false;
   end;
-
-  { //vnome1 = 2
-    if vnome1 = 'Tribo dos Atrozes' then
-    begin
-    imgAtroz2I.Visible:=true;
-    imgAtroz2.Visible:=false;
-    end;
-
-    if vnome1 = 'Tribo Escura' then
-    begin
-    imgDark2I.Visible:=true;
-    imgDark2.Visible:=false;
-    end;
-
-    if vnome1 = 'Tribo Maquinal' then
-    begin
-    imgMachi2I.Visible:=true;
-    imgMachi2.Visible:=false;
-    end;
-
-    if vnome1 = 'Tribo dos Saqueadores' then
-    begin
-    imgMarauder2I.Visible:=true;
-    imgMarauder2.Visible:=false;
-    end;
-
-    if vnome1 = 'Tribo dos Misticos' then
-    begin
-    imgMystic2I.Visible:=true;
-    imgMystic2.Visible:=false;
-    end;
-
-    if vnome1 = 'Tribo dos Fora da Lei' then
-    begin
-    imgOutlaw2I.Visible:=true;
-    imgOutlaw2.Visible:=false;
-    end;
-
-    if vnome1 = 'Tribo da Matança' then
-    begin
-    imgSlaughter2I.Visible:=true;
-    imgSlaughter2.Visible:=false;
-    end;
-
-    if vnome1 = 'Tribo do Terror' then
-    begin
-    imgTerror2I.Visible:=true;
-    imgTerror2.Visible:=false;
-    end;
-
-    if vnome1 = 'Tribo dos Senhores da Guerra' then
-    begin
-    imgWar2I.Visible:=true;
-    imgWar2.Visible:=false;
-    end; }
 
   // vnome2 = 1
   if vnome2 = 'Tribo dos Atrozes' then
@@ -255,7 +200,7 @@ begin
     imgOutlaw1.Visible := false;
   end;
 
-  if vnome2 = 'Tribo da Matança' then
+  if vnome2 = 'Tribo da MatanÃ§a' then
   begin
     imgSlaughter1I.Visible := True;
     imgSlaughter1.Visible := false;
@@ -310,7 +255,7 @@ begin
     imgOutlaw2.Visible := false;
   end;
 
-  if vnome2 = 'Tribo da Matança' then
+  if vnome2 = 'Tribo da MatanÃ§a' then
   begin
     imgSlaughter2I.Visible := True;
     imgSlaughter2.Visible := false;
@@ -333,7 +278,7 @@ begin
   begin
     imgAtroz2.Visible := false;
     imgAtroz2I.Visible := True;
-    if vnome1 = vnome2 then // qdo as 2 forem certas ocultar as interrogações
+    if vnome1 = vnome2 then // qdo as 2 forem certas ocultar as interrogaÃ§Ãµes
     begin
       imgAtroz1I.Visible := false;
       imgAtroz2I.Visible := false;
@@ -395,7 +340,7 @@ begin
     end;
   end;
 
-  if vnome1 = 'Tribo da Matança' then
+  if vnome1 = 'Tribo da MatanÃ§a' then
   begin
     imgSlaughter2.Visible := false;
     imgSlaughter2I.Visible := True;
@@ -443,37 +388,37 @@ end;
 // ATROZ1
 procedure TfrmJogo.imgAtroz1IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgAtroz1I.Visible := false;
     imgAtroz1.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo dos Atrozes';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
 
     if (vnome1 = 'Tribo dos Atrozes') then
     begin
-      showmessage('Começa caçada');
+      showmessage('ComeÃ§a caÃ§ada');
       npares := npares - 1;
     end;
 
     if (vnome1 <> 'Tribo dos Atrozes') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -492,37 +437,37 @@ end;
 // ATROZ2
 procedure TfrmJogo.imgAtroz2IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgAtroz2I.Visible := false;
     imgAtroz2.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo dos Atrozes';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
 
     if (vnome1 = 'Tribo dos Atrozes') then
     begin
-      showmessage('Começa caçada');
+      showmessage('ComeÃ§a caÃ§ada');
       npares := npares - 1;
     end;
 
     if (vnome1 <> 'Tribo dos Atrozes') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -547,37 +492,37 @@ end;
 // ESCURA1
 procedure TfrmJogo.imgDark1IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgDark1I.Visible := false;
     imgDark1.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo Escura';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
 
     if (vnome1 = 'Tribo Escura') then
     begin
-      showmessage('Aceite sua escuridão ao nosso lado');
+      showmessage('Aceite sua escuridÃ£o ao nosso lado');
       npares := npares - 1;
     end;
 
     if (vnome1 <> 'Tribo Escura') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -596,37 +541,37 @@ end;
 // ESCURA2
 procedure TfrmJogo.imgDark2IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgDark2I.Visible := false;
     imgDark2.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo Escura';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
 
     if (vnome1 = 'Tribo Escura') then
     begin
-      showmessage('Aceite nossa escuridão ao nosso lado');
+      showmessage('Aceite nossa escuridÃ£o ao nosso lado');
       npares := npares - 1;
     end;
 
     if (vnome1 <> 'Tribo Escura') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -646,37 +591,37 @@ end;
 // MAQUINAL1
 procedure TfrmJogo.imgMachi1IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgMachi1I.Visible := false;
     imgMachi1.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo Maquinal';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
 
     if (vnome1 = 'Tribo Maquinal') then
     begin
-      showmessage('Tudo para a grande máquina');
+      showmessage('Tudo para a grande mÃ¡quina');
       npares := npares - 1;
     end;
 
     if (vnome1 <> 'Tribo Maquinal') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -695,24 +640,24 @@ end;
 // MAQUINAL2
 procedure TfrmJogo.imgMachi2IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgMachi2I.Visible := false;
     imgMachi2.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo Maquinal';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
@@ -725,7 +670,7 @@ begin
 
     if (vnome1 <> 'Tribo Maquinal') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -745,24 +690,24 @@ end;
 // SAQUEADORES1
 procedure TfrmJogo.imgMarauder1IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgMarauder1I.Visible := false;
     imgMarauder1.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo dos Saqueadores';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
@@ -775,7 +720,7 @@ begin
 
     if (vnome1 <> 'Tribo dos Saqueadores') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -794,24 +739,24 @@ end;
 // SAQUEADORES2
 procedure TfrmJogo.imgMarauder2IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgMarauder2I.Visible := false;
     imgMarauder2.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo dos Saqueadores';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
@@ -824,7 +769,7 @@ begin
 
     if (vnome1 <> 'Tribo dos Saqueadores') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -844,24 +789,24 @@ end;
 // MISTICOS1
 procedure TfrmJogo.imgMystic1IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgMystic1I.Visible := false;
     imgMystic1.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo dos Misticos';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
@@ -874,7 +819,7 @@ begin
 
     if (vnome1 <> 'Tribo dos Misticos') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -893,24 +838,24 @@ end;
 // MISTICOS2
 procedure TfrmJogo.imgMystic2IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgMystic2I.Visible := false;
     imgMystic2.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo dos Misticos';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
@@ -923,7 +868,7 @@ begin
 
     if (vnome1 <> 'Tribo dos Misticos') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -943,24 +888,24 @@ end;
 // OUTLAW1
 procedure TfrmJogo.imgOutlaw1IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgOutlaw1I.Visible := false;
     imgOutlaw1.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo dos Foras da Lei';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
@@ -973,7 +918,7 @@ begin
 
     if (vnome1 <> 'Tribo dos Foras da Lei') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -992,24 +937,24 @@ end;
 // OUTLAW2
 procedure TfrmJogo.imgOutlaw2IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgOutlaw2I.Visible := false;
     imgOutlaw2.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo dos Foras da Lei';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
@@ -1022,7 +967,7 @@ begin
 
     if (vnome1 <> 'Tribo dos Foras da Lei') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -1039,46 +984,46 @@ begin
 end;
 
 
-// MATANÇA1
+// MATANÃ‡A1
 procedure TfrmJogo.imgSlaughter1IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgSlaughter1I.Visible := false;
     imgSlaughter1.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
-    vnome1 := 'Tribo da Matança';
+    vnome1 := 'Tribo da MatanÃ§a';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
 
-    if (vnome1 = 'Tribo da Matança') then
+    if (vnome1 = 'Tribo da MatanÃ§a') then
     begin
       showmessage('Busquem mais sangue');
       npares := npares - 1;
     end;
 
-    if (vnome1 <> 'Tribo da Matança') then
+    if (vnome1 <> 'Tribo da MatanÃ§a') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
   if aberta = True then
   begin
-    vnome2 := 'Tribo da Matança';
+    vnome2 := 'Tribo da MatanÃ§a';
     horinha.Enabled := True;
   end;
 
@@ -1088,46 +1033,46 @@ begin
   end;
 end;
 
-//MATANÇA2
+//MATANÃ‡A2
 procedure TfrmJogo.imgSlaughter2IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgSlaughter2I.Visible := false;
     imgSlaughter2.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
-    vnome1 := 'Tribo da Matança';
+    vnome1 := 'Tribo da MatanÃ§a';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
 
-    if (vnome1 = 'Tribo da Matança') then
+    if (vnome1 = 'Tribo da MatanÃ§a') then
     begin
       showmessage('Busquem mais sangue');
       npares := npares - 1;
     end;
 
-    if (vnome1 <> 'Tribo da Matança') then
+    if (vnome1 <> 'Tribo da MatanÃ§a') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
   if aberta = True then
   begin
-    vnome2 := 'Tribo da Matança';
+    vnome2 := 'Tribo da MatanÃ§a';
     horinha.Enabled := True;
   end;
 
@@ -1141,24 +1086,24 @@ end;
 // TERROR1
 procedure TfrmJogo.imgTerror1IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgTerror1I.Visible := false;
     imgTerror1.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo do Terror';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
@@ -1171,7 +1116,7 @@ begin
 
     if (vnome1 <> 'Tribo do Terror') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -1190,24 +1135,24 @@ end;
 //TERROR2
 procedure TfrmJogo.imgTerror2IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgTerror2I.Visible := false;
     imgTerror2.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo do Terror';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
@@ -1220,7 +1165,7 @@ begin
 
     if (vnome1 <> 'Tribo do Terror') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -1240,24 +1185,24 @@ end;
 // SENHORES DA GUERRA1
 procedure TfrmJogo.imgWar1IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgWar1I.Visible := false;
     imgWar1.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo dos Senhores da Guerra';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
@@ -1270,7 +1215,7 @@ begin
 
     if (vnome1 <> 'Tribo dos Senhores da Guerra') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -1289,24 +1234,24 @@ end;
 // SENHORES DA GUERRA2
 procedure TfrmJogo.imgWar2IClick(Sender: TObject);
 begin
-  if limite <= 1 then // oculta a interrogação
+  if limite <= 1 then // oculta a interrogaÃ§Ã£o
   begin
     imgWar2I.Visible := false;
     imgWar2.Visible := True;
     limite := limite + 1;
   end;
 
-  if limite = 3 then // se passar o limite não vai
+  if limite = 3 then // se passar o limite nÃ£o vai
   begin
     limite := limite - 3;
   end;
 
-  if limite = 1 then // prepara a estipulação dos "vnome's"
+  if limite = 1 then // prepara a estipulaÃ§Ã£o dos "vnome's"
   begin
     vnome1 := 'Tribo dos Senhores da Guerra';
   end;
 
-  if limite = 2 then // deixando todas interrogações invisiveis
+  if limite = 2 then // deixando todas interrogaÃ§Ãµes invisiveis
   begin
     DesabilitarImagens;
     limite:=0;
@@ -1319,7 +1264,7 @@ begin
 
     if (vnome1 <> 'Tribo dos Senhores da Guerra') then
     begin
-      showmessage('Desapareça inseto');
+      showmessage('DesapareÃ§a inseto');
     end;
   end;
 
@@ -1384,9 +1329,9 @@ procedure TfrmJogo.Continuar;
 begin
   if (npares=0) then
     begin                                                             //tipo caption                   //yes or no
-      if Application.MessageBox ('Deseja Jogar novamente? Panaka, zuas S2', 'Confirmação', MB_ICONQUESTION + MB_YESNO + MB_DEFBUTTON2)=IDNO then
+      if Application.MessageBox ('Deseja Jogar novamente? Panaka, zuas S2', 'ConfirmaÃ§Ã£o', MB_ICONQUESTION + MB_YESNO + MB_DEFBUTTON2)=IDNO then
       close;
-      //MessageBox('aaaaaaaaaaaaaaaaaaaaaaaaaaaaeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CUZÃOOOO GG NESSSA POHA, KKKKKKKK');
+      //MessageBox('aaaaaaaaaaaaaaaaaaaaaaaaaaaaeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee CUZÃƒOOOO GG NESSSA POHA, KKKKKKKK');
     end
   else
     begin
@@ -1404,7 +1349,7 @@ procedure TfrmJogo.LimparTela;
 begin
   //showmessage(IntToStr(npares));
 
-  //interrogações
+  //interrogaÃ§Ãµes
   imgMystic1I.Enabled := True;
   imgWar1I.Enabled := True;
   imgDark1I.Enabled := True;
